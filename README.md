@@ -18,28 +18,35 @@ Bugtags是国内首款为改善移动产品质量而专门打造的测试平台�
 
 ## Advantage 优势
 * 极速集成
+
 　一行代码，开启高效测试
+ 
 * 所见即所得提交
+
 　在你的应用中直接提交 Bug，方便快捷
+ 
 * 自动记录运行时数据
+
 　界面截图、设备信息、控制台日志、操作步骤，一项也不少
+ 
 * 全民参与测试
+
   测试零门槛，产品经理、设计师、客服都能快速参与
 
 ## Installation 安装
 ### 1.手动安装:
-1.下载 SDK 压缩包并解压缩(http://bugtags.com/url/ios)
+1.1.下载 SDK 压缩包并解压缩(http://bugtags.com/url/ios)
 
 将 Bugtags.framework 和 Bugtags.bundle 文件夹拖到 Xcode 项目中
 
-2.在应用的设置中，Build Phases -> Link Binary With Libraries 里添加以下 frameworks 及 libraries：
+1.2.在应用的设置中，Build Phases -> Link Binary With Libraries 里添加以下 frameworks 及 libraries：
 
 ```
 UIKit            AVFoundation      Foundation        SystemConfiguration
 QuartzCore        CoreLocation      ImageIO            Security       CFNetwork     libc++.tbd
 ```
 
-3.重要！ 在应用对应 target 的设置中，Build Settings -> Linking 项下的 Other Linker Flags 中添加 -ObjC（如果已有，则不需要再添加）注意 O,C 大写 
+1.3.重要！ 在应用对应 target 的设置中，Build Settings -> Linking 项下的 Other Linker Flags 中添加 -ObjC（如果已有，则不需要再添加）注意 O,C 大写 
 
 ![](http://og1yl0w9z.bkt.clouddn.com/17-8-23/62776766.jpg)
 
