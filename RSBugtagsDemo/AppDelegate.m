@@ -23,7 +23,7 @@
     
     BugtagsOptions *options = [[BugtagsOptions alloc] init];
     options.trackingUserSteps = YES; // 具体可设置的属性请查看 Bugtags.h
-    [Bugtags startWithAppKey:@"dbba19e5b386ebc75bb827dd0e9b2730" invocationEvent:BTGInvocationEventBubble options:options];
+    [Bugtags startWithAppKey:@"dbba19e5b386ebc75bb827dd0e9b2730" invocationEvent:BTGInvocationEventShake options:options];
     return YES;
 }
 
