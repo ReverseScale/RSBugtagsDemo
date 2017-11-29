@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A8H-hH-hCz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2j9-Iq-Ucj">
+            <objects>
+                <navigationController id="A8H-hH-hCz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Awa-tI-lLi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FMp-Jf-6cr" kind="relationship" relationship="rootViewController" id="QxH-sb-aEi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Il2-dc-Qoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="99"/>
+        </scene>
+        <!--发现 Bug-->
+        <scene sceneID="LfA-qG-FyK">
+            <objects>
+                <viewController id="RCB-Cw-pm8" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fhv-Uy-GKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJN-rR-sHe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nAV-4t-cPq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bug.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-fU-GtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-V7-zao">
+                                <rect key="frame" x="56" y="553" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“精灵球” -&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsI-al-ONt">
+                                <rect key="frame" x="56" y="582" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抓住它" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-y3-WbD">
+                                <rect key="frame" x="56" y="611" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o7A-fU-GtQ" secondAttribute="trailing" id="61Y-TG-NV9"/>
+                            <constraint firstItem="o7A-fU-GtQ" firstAttribute="leading" secondItem="nAV-4t-cPq" secondAttribute="leading" id="Aso-wQ-lT1"/>
+                            <constraint firstItem="EsI-al-ONt" firstAttribute="top" secondItem="d9I-V7-zao" secondAttribute="bottom" constant="8" id="GU4-xm-X1U"/>
+                            <constraint firstItem="EsI-al-ONt" firstAttribute="leading" secondItem="d9I-V7-zao" secondAttribute="leading" id="N3a-CM-nug"/>
+                            <constraint firstItem="EJN-rR-sHe" firstAttribute="top" secondItem="dk9-y3-WbD" secondAttribute="bottom" constant="35" id="Ny9-34-8up"/>
+                            <constraint firstItem="dk9-y3-WbD" firstAttribute="top" secondItem="EsI-al-ONt" secondAttribute="bottom" constant="8" id="Orx-oO-Poh"/>
+                            <constraint firstItem="dk9-y3-WbD" firstAttribute="leading" secondItem="d9I-V7-zao" secondAttribute="leading" id="aqe-VK-L9q"/>
+                            <constraint firstItem="d9I-V7-zao" firstAttribute="leading" secondItem="nAV-4t-cPq" secondAttribute="leadingMargin" constant="40" id="dST-kE-bT9"/>
+                            <constraint firstItem="o7A-fU-GtQ" firstAttribute="top" secondItem="nAV-4t-cPq" secondAttribute="top" id="wxO-5R-5kj"/>
+                            <constraint firstItem="EJN-rR-sHe" firstAttribute="top" secondItem="o7A-fU-GtQ" secondAttribute="bottom" id="x2D-tw-si2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GlO-70-ae2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="发现 Bug" id="lzo-FG-8ng"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uk0-cF-uCU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="99"/>
+        </scene>
+        <!--Demo-->
+        <scene sceneID="B34-2j-56z">
+            <objects>
+                <tableViewController id="FMp-Jf-6cr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="8lt-nD-DWA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94892948870000005" green="0.94908481840000003" blue="0.94889634850000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Vf7-t8-QAb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSBugtagsDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrG-c1-V5s">
+                                    <rect key="frame" x="88" y="62" width="199.5" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="JrG-c1-V5s" firstAttribute="centerY" secondItem="Vf7-t8-QAb" secondAttribute="centerY" id="JNf-Lr-74i"/>
+                                <constraint firstItem="JrG-c1-V5s" firstAttribute="centerX" secondItem="Vf7-t8-QAb" secondAttribute="centerX" id="uBY-TW-Z0z"/>
+                            </constraints>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="KOq-Qi-i9Q">
+                            <rect key="frame" x="0.0" y="217" width="375" height="164"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="fNQ-RL-R6t">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zPb-GP-HE9" detailTextLabel="oBN-jH-X3x" style="IBUITableViewCellStyleSubtitle" id="9OU-S9-eb8">
+                                        <rect key="frame" x="0.0" y="157" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9OU-S9-eb8" id="x8T-Re-pvy">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="发现 Bug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zPb-GP-HE9">
+                                                    <rect key="frame" x="16" y="10" width="69.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Find Bug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oBN-jH-X3x">
+                                                    <rect key="frame" x="16" y="33.5" width="50" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RCB-Cw-pm8" kind="push" id="u9K-WJ-3Br"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Demo" id="d3w-Ve-FSt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HB-qa-C13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bug.jpeg" width="600" height="600"/>
+    </resources>
+</document>
