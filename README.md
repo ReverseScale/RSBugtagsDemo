@@ -2,8 +2,8 @@
 OC 集成 Bugtags bug 反馈工具的 Demo
 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) 
-![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
-![](https://img.shields.io/badge/download-55.7MB-brightgreen.svg)
+![](https://img.shields.io/badge/language-Swift-orange.svg) 
+![](https://img.shields.io/badge/download-24MB-brightgreen.svg)
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
 Bugtags是国内首款为改善移动产品质量而专门打造的测试平台产品。使用Bugtags平台可以随时随地对移动产品提出准确的改善意见，使得测试更简单，修复问题更轻松，产品用户满意度更高。
